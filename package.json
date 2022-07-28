@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ohpxho/web-scraper.git"
+    "url": "git+https://github.com/ohpxho/ph-news-scraper.git"
   },
   "keywords": [
     "node"
@@ -17,13 +17,17 @@
   "author": "ohpxho",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ohpxho/web-scraper/issues"
+    "url": "https://github.com/ohpxho/ph-news-scraper/issues"
   },
-  "homepage": "https://github.com/ohpxho/web-scraper#readme",
+  "homepage": "https://github.com/ohpxho/ph-news-scraper#readme",
   "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "pug": "^3.0.2"
+    "jquery": "^3.6.0",
+    "pug": "^3.0.2",
+    "puppeteer": "^15.4.0"
   }
 }

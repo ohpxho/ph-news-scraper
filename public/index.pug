@@ -1,4 +1,6 @@
 extends layout
 
 block content
- p Hello World
+ form(method='POST', action='/scrape')
+  input(type='text', name='item')
+  input(type='submit', value='scrape')
