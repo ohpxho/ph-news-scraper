@@ -4,3 +4,10 @@ block content
  form(method='POST', action='/scrape')
   input(type='text', name='item')
   input(type='submit', value='scrape')
+
+ if articles
+  each article of articles
+   div(class='article-card')
+    a(href=article.url, class='article-title') #{article.title}
+    p #{article.datetime}
+    img(src=article.cover)

@@ -6,9 +6,9 @@ router.get('/', (req, res) => {
 	res.render('index');
 });
 
-router.post('/scrape', (req, res) => {
-	const articles = scraper.searchOperations(req.body.item);
-	res.redirect('/');
+router.post('/scrape', async (req, res) => {
+	const articles = await scraper.searchOperations(req.body.item);
+	res.render('index', { articles: articles });
 });
 
 module.exports = router;
